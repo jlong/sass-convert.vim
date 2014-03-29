@@ -1,13 +1,24 @@
 # sass-convert.vim
 
-A simple plugin that adds two commands to Vim to make it easy to convert between the two different Sass syntaxes:
+
+A simple plugin that adds a few commands to Vim to make it easy to convert between the different Sass syntaxes:
 
 * `SassToScss` converts from the old indented syntax to SCSS.
 * `ScssToSass` converts from the newer SCSS syntax to the indented syntax.
+* `CssToScss` converts from CSS to the newer SCSS syntax.
+* `CssToSass` converts from CSS to the old indented Sass syntax.
 
 Simply select the Sass that you would like to convert and type the appropriate command. For example:
 
     :SassToScss
+
+
+## Requirements
+
+The Sass gem must be installed:
+
+    gem install sass
+
 
 ## License
 
