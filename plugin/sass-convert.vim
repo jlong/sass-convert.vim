@@ -9,3 +9,12 @@ command! -bang -range=% -nargs=0 CssToScss :<line1>,<line2>!sass-convert --from 
 
 "CSS to Sass:
 command! -bang -range=% -nargs=0 CssToSass :<line1>,<line2>!sass-convert --from css --to sass
+
+"CSS to Scss:
+command! -bang -range=% -nargs=0 CssToScss :<line1>,<line2>!sass-convert --from css --to scss
+
+"Sass to CSS:
+command! -bang -range=% -nargs=0 SassToCss :<line1>,<line2>!sass --stdin --style expanded
+
+"Scss to CSS:
+command! -bang -range=% -nargs=0 ScssToCss :<line1>,<line2>!sass --stdin --scss --style expanded
